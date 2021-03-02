@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Consulta controle</string>
+    <string name="app_addClinic">Cadastre uma clínica/hospital</string>
+    <string name="app_addDoctor">Cadastre um médico</string>
+    <string name="app_save">Gravar</string>
+
+    <string name="app_clinicName">Digite o nome da clínica</string>
+    <string name="app_clinicAddress">Digite o endereço da clínica</string>
+    <string name="app_clinicDistrict">Digite o bairro da clínica</string>
+    <string name="app_clinicCity">Digite a cidade da clínica</string>
+    <string name="app_clinicPhone">Digite telefone da clínica</string>
+    <string name="app_clinicSaved">Clínica Cadastradas</string>
+
+    <string name="app_doctorName">Digite o nome do médico</string>
+    <string name="app_doctorArea">Digite a especialidade do médido</string>
+
+</resources>
