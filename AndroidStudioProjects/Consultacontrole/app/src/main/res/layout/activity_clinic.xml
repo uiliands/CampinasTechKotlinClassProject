@@ -1,79 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_gray"
     tools:context=".ClinicActivity">
 
-    <TextView
-        android:id="@+id/txtClinicTitle"
+    <ImageView
+        android:id="@+id/ellipse_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_addClinic"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="650dp"
+        android:layout_marginRight="250dp"
+        android:background="@drawable/ic_ellipse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ellipse_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="600dp"
+        android:layout_marginRight="300dp"
+        android:background="@drawable/ic_ellipse"
+        tools:layout_editor_absoluteX="-100dp"
+        tools:layout_editor_absoluteY="-50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
         android:id="@+id/txtClinicItemName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/app_clinicName"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtClinicTitle"
-        android:hint="@string/app_clinicName" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/txtClinicAddress"
+        android:id="@+id/txtClinicZipCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/app_clinicZipCode"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtClinicItemName"
-        android:hint="@string/app_clinicAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/txtClinicItemName" />
+
+    <Button
+        android:id="@+id/btnSearchZipCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/app_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtClinicZipCode" />
+
+    <EditText
+        android:id="@+id/txtClinicStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/app_clinicStreet"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSearchZipCode" />
 
     <EditText
         android:id="@+id/txtClinicDistrict"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/app_clinicDistrict"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtClinicAddress"
-        android:hint="@string/app_clinicDistrict" />
+        app:layout_constraintTop_toBottomOf="@+id/txtClinicStreet" />
 
     <EditText
         android:id="@+id/txtClinicCity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/app_clinicCity"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtClinicDistrict"
-        android:hint="@string/app_clinicCity" />
+        app:layout_constraintTop_toBottomOf="@+id/txtClinicDistrict" />
 
     <EditText
         android:id="@+id/txtClinicPhone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:background="@drawable/rectangle"
+        android:hint="@string/app_clinicPhone"
+        android:textAlignment="center"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtClinicCity"
-        android:hint="@string/app_clinicPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/txtClinicCity" />
 
     <Button
         android:id="@+id/btnAddClinic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/app_save"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtClinicPhone" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

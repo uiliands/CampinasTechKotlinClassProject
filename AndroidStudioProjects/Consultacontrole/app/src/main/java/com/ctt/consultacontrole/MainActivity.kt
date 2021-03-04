@@ -10,12 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnClinic.setOnClickListener{
+        if (ClinicActivity.clinics.isNotEmpty()) {
+            txtTitle2.setText(ClinicActivity.clinics[0].name)
+        }
+
+        imgHospital.setOnClickListener{
             val destinationView = Intent(this@MainActivity, ClinicActivity::class.java)
             startActivity(destinationView)
         }
 
-        btnDoctor.setOnClickListener{
+        imgDoctor.setOnClickListener{
             val destinationView = Intent(this@MainActivity, DoctorActivity::class.java)
             startActivity(destinationView)
         }

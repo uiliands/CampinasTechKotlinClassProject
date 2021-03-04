@@ -1,16 +1,17 @@
-package com.ctt.consultacontrole
+package com.ctt.consultacontrole.model
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.ctt.consultacontrole.model.Clinic
-import androidx.recyclerview.widget.RecyclerView.*
+import com.ctt.consultacontrole.R
 
 //classe para vincular a lista de dados ao item de lista (xml class_item)
-class MessageAdapter(private val clinicList: MutableList<Clinic>) : RecyclerView.Adapter<MessageAdapter.ViewHolder>() {
+class ClinicAdapter(private val clinicList: MutableList<Clinic>) :
+        RecyclerView.Adapter<ClinicAdapter.ViewHolder>() {
 
+    //Cria classe viewholder, encontra itens do XML com findViewById
     //item final a ser visualizado e inserido
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val clinicName: TextView = view.findViewById(R.id.txtClinicItemName)
@@ -22,7 +23,7 @@ class MessageAdapter(private val clinicList: MutableList<Clinic>) : RecyclerView
         return ViewHolder(view)
     }
 
-    //responsável por vincular os dados com os componentes do xml
+    //responsável por vincular os dados passados via adapter com os componentes do xml usando onbindviewholder
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.clinicName.text = clinicList[position].name
     }
