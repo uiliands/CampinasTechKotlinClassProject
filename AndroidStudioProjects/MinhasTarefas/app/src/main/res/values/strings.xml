@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Minhas Tarefas</string>
+    <string name="app_first_name">Minhas</string>
+    <string name="app_last_name">Tarefas</string>
+    <string name="app_add_task">Adicionar</string>
+    <string name="app_new_task">Nova tarefa</string>
+    <string name="app_new_task_detail">Adicione uma tarefa que ainda será feita</string>
+    <string name="app_task_title">Título da tarefa</string>
+    <string name="app_task_description">Descrição da tarefa</string>
+    <string name="app_create_task">Criar tarefa</string>
+    <string name="app_delete_task">Excluir tarefa</string>
+    <string name="app_start_task">Iniciar tarefa</string>
+    <string name="app_saved_task">Tarefa cadastrada</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="task_tab_to_do">A fazer</string>
+    <string name="task_tab_in_Process">Em progresso</string>
+    <string name="task_tab_done">Feitas</string>
+</resources>
